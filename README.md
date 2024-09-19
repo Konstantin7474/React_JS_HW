@@ -1,3 +1,16 @@
+
+
+
+Развернуть новый проект с использованием create-react-app.
+
+Создать компонент Message, отображающий переданный ему props текст.
+
+Стилизовать компоненты через css (при желании можно использовать less или sass).
+
+Дополнительное задание: Установить расширение React Devtools.
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
