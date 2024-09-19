@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import Message from './components/Message'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           Learn React
         </a>
       </header>
+      <Message text="тест текст"/>
     </div>
   );
 }
