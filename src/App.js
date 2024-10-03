@@ -1,7 +1,10 @@
 /* import logo from './logo.svg'; */
 import "./App.css";
-import Message from "./components/Message";
-import CommentList from "./components/CommentList";
+import { BrowserRouter, Link, Routes, Route } from "react-router-dom";
+/* import Message from "./components/Message"; */
+import HomePage from "./components/HomePage/HomePage";
+import AboutPage from "./components/AboutPage/AboutPage";
+/* import CommentList from "./components/CommentList"; */
 
 function App() {
   return (
@@ -20,8 +23,28 @@ function App() {
           Learn React
         </a>
       </header> */}
-      <Message text="тест текст" />
-      <CommentList />
+      {/* <Message text="тест текст" /> */}
+      {/* <CommentList /> */}
+      <BrowserRouter>
+        <header className="App-header">
+          <ul className="list">
+            <li>
+              <Link to="/" className="link">
+                Главная
+              </Link>
+            </li>
+            <li>
+              <Link to="/about" className="link">
+                О нас
+              </Link>
+            </li>
+          </ul>
+        </header>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

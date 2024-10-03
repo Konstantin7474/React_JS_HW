@@ -15,7 +15,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -40,4 +40,13 @@
 .message{
   color: blue;
   font-style: oblique;
+}
+
+.list{
+  list-style-type: none;
+}
+
+.link{
+  text-decoration: none;
+  color: red;
 }
