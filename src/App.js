@@ -1,15 +1,19 @@
 /* import logo from './logo.svg'; */
 import "./App.css";
-import { BrowserRouter, Link, Routes, Route } from "react-router-dom";
+/* import { BrowserRouter, Link, Routes, Route } from "react-router-dom"; */
 /* import Message from "./components/Message"; */
-import HomePage from "./components/HomePage/HomePage";
-import AboutPage from "./components/AboutPage/AboutPage";
+/* import HomePage from "./components/HomePage/HomePage";
+import AboutPage from "./components/AboutPage/AboutPage"; */
+import { ThemeSwitcher } from "./components/ThemeSwitcher";
 /* import CommentList from "./components/CommentList"; */
+import {Provider} from "react-redux";
+import {store} from "./store/Store";
 
 function App() {
   return (
-    <div className="App">
-      {/* <header className="App-header">
+    <Provider store={store}>
+      <div className="App">
+        {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -23,9 +27,9 @@ function App() {
           Learn React
         </a>
       </header> */}
-      {/* <Message text="тест текст" /> */}
-      {/* <CommentList /> */}
-      <BrowserRouter>
+        {/* <Message text="тест текст" /> */}
+        {/* <CommentList /> */}
+        {/* <BrowserRouter>
         <header className="App-header">
           <ul className="list">
             <li>
@@ -44,8 +48,10 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
         </Routes>
-      </BrowserRouter>
-    </div>
+      </BrowserRouter> */}
+      <ThemeSwitcher/>
+      </div>
+    </Provider>
   );
 }
 
