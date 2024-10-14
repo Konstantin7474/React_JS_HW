@@ -9,7 +9,7 @@ function TodoList() {
 
   const [todos, setTodos] = useState([]);
 
-  const hanldeInputChange = (event) => {
+  const handleInputChange = (event) => {
     setInputValue(event.target.value);
   };
 
@@ -34,7 +34,7 @@ function TodoList() {
         type="text"
         placeholder="Добавить новое дело"
         value={inputValue}
-        onChange={hanldeInputChange}
+        onChange={handleInputChange}
         margin="0"
       />
       <Button onClick={addTodo} variant="contained" color="primary">

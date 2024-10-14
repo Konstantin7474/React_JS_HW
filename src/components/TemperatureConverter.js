@@ -20,7 +20,7 @@ function TemperatureConverter() {
   return (
     <div>
       <TextField
-        label="Темпиратура в градусах Цельсия"
+        label="Температура в градусах Цельсия"
         value={celsius}
         onChange={handleCelsiusChange}
         type="number"
